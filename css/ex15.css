@@ -1,0 +1,156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;
+}
+
+body {
+    font-family: Georgia, Times, sans-serif;
+    line-height: 1.4em;
+    margin: 0px;
+    background-color: #481212;
+    color: #666666;
+}
+
+div.wrapper {
+    width: 940px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+header img {
+    display: block;
+    /** Clear white space between img and nav */
+}
+
+nav ul {
+    margin: 0px;
+    background-color: #aeaca8;
+    padding: 5px;
+    height: 30px;
+    border: 0px;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    padding-top: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+div.content {
+    float: left;
+    width: 610px;
+    margin: 5px;
+    border-right: 1px solid #eae6e6;
+}
+
+.food {
+    overflow: auto;
+    width: 100%;
+}
+
+figure {
+    float: left;
+    width: 230px;
+    height: 180px;
+    padding: 5px;
+    margin: 20px 10px;
+    border: 1px solid #eae6e6;
+}
+
+figure img {
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: left;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    margin-top: 10px;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    margin: 10px 10pxd;
+}
+
+.recipes h2 {
+    margin-bottom: 20px;
+}
+
+.recipes ul li {
+    list-style-type: none;
+    margin: 40px 10px;
+    border-bottom: 1px solid #eae6e6;
+}
+
+.recipes ul li a {
+    font-family: sans-serif;
+    color: red;
+    text-decoration: none;
+}
+
+.contact {
+    margin: 20px 10px;
+}
+
+.contact p {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #aeaca8;
+    clear: left;
+}
+
+footer p {
+    margin-left: 40px;
+    color: white;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* End hide from IE-mac */

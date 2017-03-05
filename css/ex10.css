@@ -1,0 +1,77 @@
+body {
+    background-color: silver;
+    color: white;
+    padding: 20px;
+    font-family: 'Indie Flower','Nunito Sans', Arial, Verdana, sans-serif;
+}
+
+h1 {
+    background-color: #ffffff;
+    background-color: hsla(0, 100%, 100%, 0.5);
+    color: #64645A;
+    padding: inherit;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+#fourteen {
+    background-color: hsla(222, 100%, 50%, 1);
+    
+}
+
+#thirteen {
+    background-color: hsla(222, 100%, 55%, 1);
+}
+
+#tweleve {
+    background-color: hsla(222, 100%, 63%, 1);
+}
+
+#eleven {
+    background-color: hsla(222, 100%, 70%, 1);
+}
+#ten {
+    background-color: hsla(222, 100%, 80%, 1);
+}
+
+#nine {
+    background-color: hsla(222, 100%, 85%, 1);
+}
+
+#eight {
+    background-color: hsla(222, 100%, 90%, 1);
+}
+
+#seven {
+    background-color: hsla(117, 100%, 19%, 1)
+}
+
+#six {
+    background-color: hsla(308, 85%, 90%, 1);
+}
+
+#five {
+    background-color: hsla(308, 85%, 85%, 1);
+}
+
+#four {
+    background-color: hsla(308, 85%, 80%, 1);
+}
+
+#three {
+    background-color: hsla(308, 85%, 70%, 1);
+}
+
+#two {
+    background-color: hsla(308, 85%, 63%, 1);
+}
+
+#one {
+    background-color: hsla(308, 85%, 55%, 1);
+}
+#zero {
+    background-color: hsla(308, 85%, 50%, 1);
+}

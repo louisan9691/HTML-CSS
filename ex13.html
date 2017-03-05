@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="CSS properties for lists, tables and forms">
+    <meta http-equiv="author" content="Louis An">
+    <meta name="viewport:" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet"  type="text/css" href="css/ex13.css">
+  </head>
+  <body>
+    <h1>Poetry Workshops</h1>
+    <p class="intro">We will be conducting a number of peotry workshops and symposiums throughtout the year. <br>
+    Please note that the following events are free to members:</p>
+
+    <div class="list">
+      <ul>
+        <li>A Poetic Perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+      </ul>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">New York</th>
+            <th scope="col">Chicago</th>
+            <th scope="col">San Francisco</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <th scope="row">A Poetic Perspective</th>
+            <td> Sat, 4 Feb 2012 <br> 11am - 2pm</td>
+            <td> Sat, 3 Mar 2012 <br> 11am - 2pm</td>
+            <td> Sat, 17 Mar 2012 <br> 11am - 2pm</td>
+          </tr>
+          <tr>
+            <th scope="row">Walt Whitman at War</th>
+            <td> Sat, 7 Apr 2012 <br> 11am - 1pm</td>
+            <td> Sat, 5 May 2012 <br> 11am - 1pm</td>
+            <td> Sat, 19 May 2012 <br> 11am - 1pm</td>
+          </tr>
+          <tr class="odd">
+            <th scope="row">Found Poems &amp; Outside Poetry</th>
+            <td> Sat, 7 Apr 2012 <br> 11am - 2pm</td>
+            <td> Sat, 5 May 2012 <br> 11am - 2pm</td>
+            <td> Sat, 19 May 2012 <br> 11am - 2pm</td>
+          </tr>
+          <tr>
+            <th scope="row">Natural Death: An Exploration</th>
+            <td> Sat, 4 Aug 2012 <br> 11am - 4pm</td>
+            <td> Sat, 8 Sep 2012 <br> 11am - 4pm</td>
+            <td> Sat, 15 Sep 2012 <br> 11am - 4pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        <div class="form">
+          <fieldset>
+            <legend>Register your interest</legend>
+            <div class="form-content">
+              <form class="" action="ex13.html" method="post">
+                <div class="form-name">
+                  <label for="name" class="title">Your name:</label>
+                  <input type="text" name="name" maxlength="30">
+                </div>
+                <div class="form-email">
+                  <label for="email" class="title">Your email:</label>
+                  <input type="email" name="email" maxlength="30">
+                </div>
+                <div class="form-dropdown">
+                  <label for="center" class="title">Your closest center:</label>
+                  <select class="dropbox" name="center">
+                    <option value="new-york" selected="selected">New York</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="san-francisco">San Francisco</option>
+                  </select>
+                </div>
+                <div class="form-radio">
+                  <label for="member" class="title">Are you a member?</label>
+                  <label><input type="radio" name="member" value="yes" >Yes</label>
+                  <label id="r2-label"><input type="radio" name="member" value="no" > No</label>
+                </div>
+              </fieldset>
+              <input type="submit" name="submit" class="submit" value="Register" />
+              </form>
+            </div>
+        </div>
+  </body>
+</html>

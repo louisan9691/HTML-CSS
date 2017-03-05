@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Cooking site using HTML5">
+    <meta http-equiv="author" content="Louis An">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/ex15-a.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="wrapper clearfix">
+            <header>
+                <img src="images/header.jpg" alt="Yoko's kitchen logo">
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">classes</a></li>
+                        <li><a href="#">catering</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <!-- end nav -->
+            </header>
+            <!-- end header -->
+
+            <div class="content-flex">
+                <div class="content">
+                    <section class="food">
+                        <div class="food-photo">
+                            <figure>
+                                <img src="images/print-01.jpg" alt="Bak Choi">
+                                <figcaption>Bak Choi</figcaption>
+                            </figure>
+                        </div>
+                        <div class="food-intro">
+                            <h2>Japanese Vegeterian</h2>
+                            <h3>Five week course in London</h3>
+                            <p>A five week introduction to traditional Japanese vegeterian meals, teaching you a selection of rice and noodle dishes.</p>
+                        </div>
+                    </section>
+
+                    <section class="food">
+                        <div class="food-photo">
+                            <figure>
+                                <img src="images/print-01.jpg" alt="Sauce">
+                                <figcaption>Teriyaki Sauce</figcaption>
+                            </figure>
+                        </div>
+                        <div class="food-intro">
+                            <h2>Sauces Masterclass</h2>
+                            <h3>One day workshop</h3>
+                            <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of japanese cookery.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="aside-right">
+                    <section class="recipes">
+                        <h2>Popular Recipes</h2>
+                        <ul>
+                            <li><a href="#">Yakitori (grilled chicken)</a></li>
+                            <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                            <li><a href="#">Okonomiyaki</a></li>
+                            <li><a href="#">Mitzuki (chicken stew)</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="contact">
+                        <h2>Contact</h2>
+                        <p>Yoko's Kitchen <br> 27 Redchurch Street <br> Shoreditch <br> London E2 7DP</p>
+                    </section>
+                </aside>
+            </div>
+            <footer>
+                <p> &copy; 2011 Yoko's Kitchen</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

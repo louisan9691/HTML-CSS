@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flash, Video and Audio</title>
+    <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js">
+    </script>
+    <script type="text/javascript">
+    var flashvars = {};
+    var params = {movie: "videos/puppy.mp4"};
+    swfobject.embedSWF("flash/osplayer.swf", "dog","400","320", flashvars, params);
+    </script>
+  </head>
+  <body>
+    <video src="videos/puppy.mp4" width="400" height="320 "poster="" controls preload="auto" loop>
+    <p>Video of a dog</p>
+    </video>
+    <br />
+    <br />
+
+    <div class="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tIwU5haWs4k" frameborder="0" allowfullscreen>
+      </iframe>
+    </div> <!-- end youtube -->
+  </body>
+</html>

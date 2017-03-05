@@ -1,0 +1,51 @@
+body{
+  font-size: 16px;
+  padding: 20px;
+  font-family: Times, Verdana, sans-serif;
+  text-align: left;
+  color: black;
+}
+
+h1, h2, h3, #description>span {
+  color: blue;
+}
+
+h1 {
+  font-size: 32px;
+  text-shadow: 1px 1px 0px black;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h3{
+  font-size: 19px;
+}
+
+h3:hover{
+  color: red;
+  text-decoration: underline;
+}
+p{
+  line-height: 1.4em;
+  font-family: Arial, sans-serif;
+}
+
+#description {
+  font-weight: bold;
+}
+
+
+#content{
+  text-align: justify;
+}
+
+.author{
+  font-style: italic;
+  text-align: right;
+}

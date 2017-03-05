@@ -1,0 +1,131 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Times, sans-serif;
+  line-height: 1.4em;
+  background-color: #481212;
+  color: #666666;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrapper {
+  margin: auto;
+  width: 942px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  background-color: grey;
+}
+
+nav ul li {
+  padding: 10px 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  flex: 3;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-right: 1px solid grey;
+}
+
+.food {
+  display: flex;
+
+}
+
+.food-photo{
+
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.food-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 0px 30px;
+
+}
+
+.food-intro h3 {
+  color: red;
+  font-size: 14px;
+}
+
+
+.aside-right{
+  flex: 1;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.recipes {
+  flex: 1;
+  margin-top: 20px;
+}
+
+
+.contact {
+  flex: 2;
+  margin-top: 80px;
+}
+
+.aside-right h2, .aside-right a {
+  color: pink;
+  text-decoration: none;
+}
+
+.recipes ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.recipes ul li{
+    margin: 5px 5px;
+    padding-top: 10px;
+    border-bottom: 1px solid pink;
+}
+
+footer{
+  background-color: grey;
+}
+
+footer p {
+  margin-left: 10px;
+  color: white;
+  font-size: 14px;
+}

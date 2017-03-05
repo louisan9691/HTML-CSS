@@ -1,0 +1,280 @@
+body{
+  background: #222;
+}
+
+.burger-container{
+  position: relative;
+  margin: 40px auto;
+  width: 100px;
+}
+
+.burger-4,.burger-3{
+  display: block;
+  cursor: pointer;
+}
+
+.burger-4 span {
+  background: white;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 3px;
+  position:relative;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.open .animation-1 span:nth-child(2),
+.open .animation-1 span:nth-child(3) {
+  opacity: 0;
+  width: 0px;
+  transform: translateX(-15px);
+}
+
+
+.open .animation-1 span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 7.5px;
+  /* OR transform-origin: right center;*/
+}
+
+.open .animation-1 span:nth-child(4){
+  transform: rotate(45deg);
+  top: -7.5px;
+  /* OR transform-origin: right center;*/
+}
+
+
+/*******ANIMATION 2*********/
+
+.open .animation-2 span:nth-child(1),
+.open .animation-2 span:nth-child(4) {
+  opacity: 0;
+  width: 0px;
+  transform: translateX(-15px);
+}
+
+
+.open .animation-2 span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 2.5px;
+}
+
+.open .animation-2 span:nth-child(3){
+  transform: rotate(45deg);
+  top: -2.5px;
+}
+
+/*******ANIMATION 3*********/
+
+
+.burger-3 span{
+  background: white;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 3px;
+  position:relative;
+  top: 0;
+  transition: all 0.5s ease-in-out; /* transition for top: -5px */
+}
+
+
+#one {
+  background-color:#2b9871;
+  width: 30px;
+  right: 10px;
+  height: 2px;
+}
+
+.open .animation-3 span:nth-child(1) {
+  animation: color 1s ease-in-out both;
+  top: -5px;
+  transform:  rotate(45deg) scaleX(0.68) translateX(10px);
+}
+
+    @keyframes color {
+      0%{
+        background-color:#2b9871;
+      }
+        100% {
+            background-color: white;
+        }
+    }
+
+.open .animation-3 span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: -5px;
+}
+
+.open .animation-3 span:nth-child(3){
+  background-color: #2b9871;
+  top: 3px;
+}
+
+
+/*******ANIMATION 4*********/
+
+
+
+.open .animation-4 span:nth-child(1) {
+  top: 5px;
+  animation: line-1-move 1s 0.3s ease-in-out forwards;
+}
+
+@keyframes line-1-move {
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+.open .animation-4 span:nth-child(2) {
+    opacity: 0;
+}
+
+.open .animation-4 span:nth-child(3) {
+    top: -5px;
+    animation: line-2-move 1s 0.3s ease-in-out forwards;
+}
+
+@keyframes line-2-move {
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+
+/*******ANIMATION 5*********/
+
+.open .animation-5 span:nth-child(1) {
+animation: line 1s ease-out forwards ;
+}
+@keyframes line {
+  30%{
+    transform: translateX(-30px);
+    opacity: 0
+  }
+  60%{
+    transform: translate(-10px, -10px) rotate(45deg);;
+    opacity: 0
+  }
+   100% {
+        transform: translate(0px, 0px) rotate(45deg);;
+        opacity: 1
+    }
+}
+
+
+.open .animation-5 span:nth-child(2) {
+  transform: translateX(30px);
+  opacity: 0
+}
+
+
+.open .animation-5 span:nth-child(3) {
+  animation: line-3 1s ease-out forwards ;
+}
+@keyframes line-3 {
+  30%{
+    transform: translateX(30px);
+    opacity: 0
+  }
+  60%{
+    transform: translate(30px, -20px) rotate(-45deg);;
+    opacity: 0
+  }
+    100% {
+        transform: translate(0px, -10px) rotate(-45deg);;
+        opacity: 1
+    }
+}
+
+/*******ANIMATION 6*********/
+.word {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+}
+
+.word p {
+transition: 0.5s ease-in-out;
+}
+
+#close {
+  flex: 1;
+  opacity: 0;
+}
+
+#menu{
+  flex: 1;
+}
+
+.open .animation-6 #menu {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.open .animation-6 #close {
+  transform: translateX(-60px);
+  opacity: 1;
+}
+
+
+/*******ANIMATION 7*********/
+.dot-3 {
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0px;
+  left: 15px;
+}
+
+.dot-3 span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-bottom: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+
+.dot-3 span:nth-child(1) {
+  background-color: #4285F4;
+}
+.dot-3 span:nth-child(2) {
+  background-color: #34A853;
+}
+.dot-3 span:nth-child(3) {
+  background-color: #EA4335;
+}
+.dot-3 span:nth-child(4) {
+  background-color: #FBBC05;
+}
+
+.open .animation-7 span:nth-child(1){
+  transform: translate(-5px, 6px) rotateZ(45deg);
+  width: 20px;
+  background-color: white;
+}
+
+.open .animation-7 span:nth-child(2){
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.open .animation-7 span:nth-child(3){
+    transform: translate(-5px, -5px) rotateZ(-45deg);
+    width: 20px;
+    background-color: white;
+}
+
+.open .animation-7 span:nth-child(4){
+    transform: translateX(10px);
+    opacity: 0;
+}
