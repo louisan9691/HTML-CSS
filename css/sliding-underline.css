@@ -26,16 +26,18 @@ div.underline a:hover {
 .underline-1 a:after {
     content: '';
     display: block;
-    margin: auto;    /* change margin left to move from left                    change margin right to move from right */
+    margin: auto;    /* change margin left to move from left
+     change margin right to move from right */
     width: 0px;
     height: 2px;
-    transition: width 1s ease ;
+    transition: width 0.8s ease ;
 }
 
 div.underline-1 a:hover:after{
     width: 100%;
     background-color: #aac468;
     cursor: pointer;
+
 }
 
 /*div:last-child::after {
