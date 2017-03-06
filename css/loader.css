@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   background-color: #4a4a4a;
+  overflow: scroll;
   animation: load-out 1s 3s ease-in-out forwards;
 }
 
@@ -50,7 +51,6 @@
 }
 
 
-
 @-webkit-keyframes spin {
   0%   {
     -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
@@ -79,6 +79,8 @@
 
 
 
+/** LOADER 2 **/
+
 #loader-2{
   display: block;
   position: relative;
@@ -96,13 +98,15 @@
 }
 
 
+
+/** LOADER 3 **/
 #loader-3 {
   position:relative;
   width: 20px;
   height: 20px;
   background: #eee;
   border-radius: 50%;
-  left: 350px;
+  margin-left: 500px;
   display: inline-block;
 }
 
@@ -219,3 +223,52 @@ div.content h1{
     transform: scale(1.0);
   }
 }
+
+
+
+
+
+/**** LOADING WORD ***/
+    .loading {
+      display: flex;
+      margin: auto;
+      position: relative;
+      bottom: 500px;
+      width: 300px;
+    }
+
+    .loading span {
+      flex: 1;
+      color: white;
+      font-size: 16px;
+      font-family: sans-serif;
+
+    }
+
+    .loading span:nth-child(1){
+      animation: loading-rotate 1.5s infinite ease-in-out;
+    }
+    .loading span:nth-child(2){
+      animation: loading-rotate 1.5s 100ms infinite ease-in-out;
+    }
+    .loading span:nth-child(3){
+      animation: loading-rotate 1.5s 200ms infinite ease-in-out;
+    }
+    .loading span:nth-child(4){
+      animation: loading-rotate 1.5s 300ms infinite ease-in-out;
+    }
+    .loading span:nth-child(5){
+      animation: loading-rotate 1.5s 400ms infinite ease-in-out;
+    }
+    .loading span:nth-child(6){
+      animation: loading-rotate 1.5s 500ms infinite ease-in-out;
+    }
+    .loading span:nth-child(7){
+      animation: loading-rotate 1.5s 600ms infinite ease-in-out;
+    }
+
+    @keyframes loading-rotate {
+      100%{
+        transform: rotate(360deg);
+      }
+    }
