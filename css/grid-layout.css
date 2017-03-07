@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: minmax(400px, 450px) 1fr 1fr;*/
+  /*grid-template-columns: 100px repeat(2, 1fr 2fr);*/
+  grid-template-rows: 100px 100px;
+  /*grid-auto-rows: 100px; */ /* grids that out of defined box */
+  grid-auto-rows: minmax(60,auto); /* rows expend as more content is added */
+  grid-gap: 10px;
+}
+
+.wrapper div:nth-child(odd){
+  background-color: lavender;
+  border-radius: 10px;
+}
+
+.wrapper div:nth-child(even){
+  background-color: #f18780;
+  border-radius: 10px;
+}
