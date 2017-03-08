@@ -1,0 +1,65 @@
+body{
+  font-size: 16px;
+  color: #acacac;
+  font-family: "SF UI display", Roboto, sans-serif;
+}
+
+.content {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+
+}
+h1 {
+  color: grey;
+}
+
+
+/**** PARALLAX HEADED ****/
+.background {
+  position: relative;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url("../images/venice1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+.logo{
+  height: 100px;
+  width: 100%;
+  font-size: 128px;
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  color: white;
+  font-family: 'Indie Flower';
+  text-decoration: underline;
+}
+
+.near-boat{
+  width: 500px;
+  height: 274px;
+  background-image: url(../images/near-boat.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  left: 55%;
+  top: 450px;
+}
+  .far-boat{
+    width: 500px;
+    height: 100px;
+    background-image: url("../images/far-boat.png");
+    background-repeat: no-repeat;
+    position: absolute;
+
+    left: 10%;
+    top: 90%;
+  }
+
+
+}
