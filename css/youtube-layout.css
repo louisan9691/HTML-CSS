@@ -49,11 +49,11 @@ header{
   "search submit"
 }
 
-input=["search"]{
+input[type="search"]{
   grid-area: search;
 }
 
-input=["submit"]{
+input[type="submit"]{
   grid-area: submit;
 }
 
@@ -102,8 +102,6 @@ input=["submit"]{
 .video{
   grid-area: video;
   background-color: #e9a6ca;
-
-
 }
 .title{
   grid-area: title;
@@ -122,8 +120,8 @@ input=["submit"]{
 
 .views span {
   position: absolute;
-  left: 60px;
-  top: 80px;
+  left: 50%;
+  top: 80%;
 }
 
 .subscription{
@@ -137,19 +135,10 @@ input=["submit"]{
 .side-bar{
   grid-area: side-bar;
   background-color: #df7639;
-
-
-
 }
 .comments{
   grid-area: comments;
   background-color:#3e78a7;
-}
-
-@supports (display: grid) {
-  .message{
-    display: none;
-  }
 }
 
 .footer{
@@ -185,4 +174,11 @@ input=["submit"]{
 
 .help{
   grid-area: help;
+}
+
+
+@supports (display: grid) {
+  .message{
+    display: none;
+  }
 }
