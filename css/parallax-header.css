@@ -50,6 +50,7 @@ h1 {
   left: 55%;
   top: 450px;
 }
+
   .far-boat{
     width: 500px;
     height: 100px;
@@ -62,4 +63,20 @@ h1 {
   }
 
 
+/* MODEL LAYOUT - LADNING */
+.row {
+  position: relative;
+}
+
+img{
+  margin: 10px;
+  border: 1px solid black;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s ease-in-out;
+}
+
+.is-showing{
+  opacity: 1;
+  transform: translateX(0px);
 }

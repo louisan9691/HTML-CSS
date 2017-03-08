@@ -19,5 +19,14 @@ $(window).scroll(function(){
 
    });
 
+   /* console log/ something triggers start when <h1 class="venice"> hit the top of the browser */
+   if(wScroll > $('.venice-pics').offset().top - ($(window).height()/ 1.2)){
 
+    $('.venice-pics .row img').each(function(i){
+
+      setTimeout(function(){
+        $('.venice-pics .row img').eq(i).addClass('is-showing');
+      },150 * (i+1));
+    });
+   }
 }); /*how far user scrolls from the top*/
