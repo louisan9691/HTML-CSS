@@ -1,0 +1,188 @@
+body{
+  background-color: #ededed;
+  font-family: "SF UI display", Roboto, sans-serif;
+}
+
+.message {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px ;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+header{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 50px;
+  grid-template-areas:
+    "logo logo logo search search search search search search upload notification user";
+  grid-area: header;
+}
+
+.logo, .search-bar,  .upload, .notification, .user{
+  padding: 5px;
+}
+
+.logo{
+  background-color: #78e39e;
+  grid-area: logo;
+}
+
+.search-bar{
+  background-color: #d786c3;
+  grid-area: search;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-areas:
+  "search submit"
+}
+
+input=["search"]{
+  grid-area: search;
+}
+
+input=["submit"]{
+  grid-area: submit;
+}
+
+.upload{
+  background-color: #d5f19a;
+  grid-area: upload;
+}
+
+.notification{
+  background-color: #3ea28f;
+  grid-area: notification;
+}
+
+.user{
+  background-color: #8ea0eb;
+  grid-area: user;
+}
+
+/**** CONTENT ***/
+.content{
+
+  width: 80%;
+  margin: 0 auto;
+  grid-area: content;
+  background-color: #ededed;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 4fr 1fr 2fr;
+  grid-template-rows: 300px repeat(6, 50px);
+
+  grid-template-areas:
+    "video video video"
+    "title title side-bar"
+    "avatar  views side-bar"
+    "avatar  views side-bar"
+    "subscription subscription  side-bar"
+    "description description side-bar "
+    "comments comments side-bar "
+    " .  . side-bar";
+}
+
+.video, .title, .avatar, .views , .subscription, .description, .comments{
+  padding: 10px;
+}
+
+.video{
+  grid-area: video;
+  background-color: #e9a6ca;
+
+
+}
+.title{
+  grid-area: title;
+  background-color: #4a417a;
+  padding: 5px;
+}
+.avatar{
+  grid-area: avatar;
+  background-color:#63255e;
+}
+.views{
+  grid-area: views;
+  background-color:#4ea35b;
+  position: relative;
+}
+
+.views span {
+  position: absolute;
+  left: 60px;
+  top: 80px;
+}
+
+.subscription{
+  grid-area: subscription;
+  background-color:#e6d967;
+}
+.description{
+  grid-area: description;
+  background-color:#46b5a9;
+}
+.side-bar{
+  grid-area: side-bar;
+  background-color: #df7639;
+
+
+
+}
+.comments{
+  grid-area: comments;
+  background-color:#3e78a7;
+}
+
+@supports (display: grid) {
+  .message{
+    display: none;
+  }
+}
+
+.footer{
+  border-bottom: 1px solid #bababa;
+  padding: 10px;
+  margin: 30px;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr 4fr;
+  grid-template-areas:
+  "footer-logo language location restriction-mode history help";
+}
+
+.footer-logo{
+  grid-area: footer-logo;
+}
+
+.language {
+  grid-area: language;
+}
+
+.location {
+  grid-area: location;
+}
+
+.restriction-mode{
+  grid-area: restriction-mode;
+}
+
+.history{
+  grid-area: history;
+}
+
+.help{
+  grid-area: help;
+}
