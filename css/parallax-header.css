@@ -18,6 +18,7 @@ h1 {
 /**** PARALLAX HEADED ****/
 .background {
   position: relative;
+  width: 1200px;
   height: 600px;
   margin: 0 auto;
   background-image: url("../images/venice1.png");
@@ -52,14 +53,14 @@ h1 {
 }
 
   .far-boat{
-    width: 500px;
+    width: 200px;
     height: 100px;
     background-image: url("../images/far-boat.png");
     background-repeat: no-repeat;
+    background-position: left;
     position: absolute;
-
     left: 10%;
-    top: 90%;
+    top: 510px;
   }
 
 
