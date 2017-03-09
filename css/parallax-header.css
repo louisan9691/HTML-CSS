@@ -1,13 +1,23 @@
 body{
+  margin: 0 auto;
   font-size: 16px;
   color: #acacac;
   font-family: "SF UI display", Roboto, sans-serif;
 }
 
+.main{
+  margin-top: 20px;
+  position: relative;
+  background: white;
+  z-index: 1000;
+}
+
 .content {
   width: 50%;
+  height: 100%;
   margin: 50px auto;
   text-align: center;
+  margin-bottom: 200px;
 
 }
 h1 {
@@ -15,7 +25,7 @@ h1 {
 }
 
 
-/**** PARALLAX HEADED ****/
+/**** PARALLAX HEADER ****/
 .background {
   position: relative;
   width: 1200px;
@@ -26,6 +36,7 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 100;
 
 }
 
@@ -53,7 +64,7 @@ h1 {
 }
 
   .far-boat{
-    width: 200px;
+    width: 100%;
     height: 100px;
     background-image: url("../images/far-boat.png");
     background-repeat: no-repeat;
@@ -64,20 +75,157 @@ h1 {
   }
 
 
-/* MODEL LAYOUT - LADNING */
+/* MODEL LAYOUT - LANDING */
 .row {
-  position: relative;
+
+  margin-bottom: 100px;
 }
 
 img{
   margin: 10px;
   border: 1px solid black;
   opacity: 0;
-  transform: translateX(-20px);
-  transition: all 1s ease-in-out;
+  transform: translateX(30px);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
 }
+
 
 .is-showing{
   opacity: 1;
   transform: translateX(0px);
+}
+
+/* ZOOMING THUMBNAILS */
+
+img:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* PERISCOPE */
+.large-window{
+  height: 400px;
+  text-align: center;
+  background-image: url("../images/venice.png");
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  border-radius: 50%;
+  margin: 100px auto;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+
+/* PROMOSCOPE TINITED background */
+.window-tint{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* set top left right bottom to 0px to stretch the
+  tinted window to its parent's size */
+}
+
+.text{
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+
+
+}
+
+.text a{
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.text a:hover {
+  background-color: white;
+  color: black
+}
+
+
+/* FLOATING ELEMENTS */
+.blog-posts {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.post-1, .post-2, .post-3 {
+  border: 1px solid #e1e1e1;
+  background: white;
+  padding: 20px 20px 0;
+  margin: 10px;
+}
+
+.post-1{
+  transform: translate(100px, 20px);
+}
+
+.post-2{
+  z-index: 1000;
+}
+
+.post-3 {
+  transform: translate(-100px, 20px);
+}
+
+.blog-posts img {
+  opacity: 1;
+}
+
+.blog-posts img:hover {
+  transform: scale(1);
+}
+
+
+
+/*REVEAL FOOTER */
+.footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  padding: 20px 0 20px 0;
+}
+
+.footer p{
+  text-align: center;
+  left: 20px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+
+}
+
+li a {
+  color: white;
+  text-decoration: none;
 }
